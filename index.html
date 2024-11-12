@@ -143,9 +143,9 @@
         // Function to handle video loading
         function handleVideoLoad() {
           isVideoLoaded = true;
-          if (playAttempted) {
-            startVideo();
-          }
+          // if (playAttempted) {
+          startVideo();
+          // }
         }
 
         // Function to start the video
@@ -168,7 +168,6 @@
         // Set up video event listeners
         video.addEventListener("loadedmetadata", function () {
           console.log("Meta data loaded");
-          video.play();
         });
 
         video.addEventListener("progress", function (e) {
